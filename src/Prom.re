@@ -6,7 +6,8 @@ type promise('a) = prom('a);
 // You can use the "p", which is a promise, as the return value of your function,
 // and use the "re" function to resolve the function with some value inside of
 // your callback.
-let make = () => {
+// let make:(unit =>Js.Promise.t('a), 'a => unit, exn => unit) = () => {
+let make= () => {
   let resolver = ref(ignore);
   let rejecter = ref(ignore);
   let p =

@@ -1,10 +1,15 @@
 {
   "name": "bs-prom",
   "version": "0.1.0",
-  "sources": {
-    "dir": "src",
-    "subdirs": true
-  },
+  "sources": [
+    {
+      "dir": "src"
+    },
+    {
+      "dir": "example",
+      "dev": true
+    }
+  ],
   "package-specs": {
     "module": "commonjs",
     "in-source": true
@@ -12,7 +17,7 @@
   "suffix": ".bs.js",
   "bs-dependencies": [],
   "warnings": {
+    "number": "-109-8",
     "error": "+101"
-  },
-  "refmt": 3
+  }
 }
